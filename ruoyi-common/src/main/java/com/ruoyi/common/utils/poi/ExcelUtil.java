@@ -18,6 +18,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
+
+import org.apache.commons.io.IOUtils;
 import org.apache.poi.ss.usermodel.BorderStyle;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
@@ -370,28 +372,8 @@ public class ExcelUtil<T>
         }
         finally
         {
-            if (wb != null)
-            {
-                try
-                {
-                    wb.close();
-                }
-                catch (IOException e1)
-                {
-                    e1.printStackTrace();
-                }
-            }
-            if (out != null)
-            {
-                try
-                {
-                    out.close();
-                }
-                catch (IOException e1)
-                {
-                    e1.printStackTrace();
-                }
-            }
+            IOUtils.closeQuietly(wb);
+            IOUtils.closeQuietly(out);
         }
     }
 
