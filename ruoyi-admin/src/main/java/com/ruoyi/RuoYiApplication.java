@@ -16,7 +16,9 @@ public class RuoYiApplication
     public static void main(String[] args)
     {
         // System.setProperty("spring.devtools.restart.enabled", "false");
-        //TODO 设计爬虫任务表 2020-12-24
+        //TODO 目标爬取微信读书部分书籍名称
+        //TODO 实现改良的雪花算法及自动赋值createTime及updateTime
+        //TODO 2020-12-26 完成vue的组件化学习
         //TODO 支持聚合支付的代码 2021-1
         SpringApplication.run(RuoYiApplication.class, args);
         System.out.println("(♥◠‿◠)ﾉﾞ  若依启动成功   ლ(´ڡ`ლ)ﾞ  \n" +

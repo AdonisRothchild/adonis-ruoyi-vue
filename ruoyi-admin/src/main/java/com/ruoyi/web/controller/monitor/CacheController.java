@@ -24,7 +24,7 @@ import com.ruoyi.common.utils.StringUtils;
 @RequestMapping("/monitor/cache")
 public class CacheController
 {
-    //TODO 2020年12月15日 任务: 将redisTemplate修改成redisClient
+
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
