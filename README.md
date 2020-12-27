@@ -30,7 +30,9 @@
 
 
 ## 功能开发目标 
-* **实现改良的雪花算法及自动赋值createTime及updateTime**
+* ~~Token实现逻辑进行修改~~ **<font color=Blue>已完成</font>**
+* ~~实现改良的雪花算法及自动赋值createTime及updateTime~~ **<font color=Blue>已完成</font>**
+* **出现新bug mybatis-plus调用baseMapper的方法不会打印日志** 
 * **完成vue的组件化学习 完成书籍相关组件的开发**
 * 实现在线阅读 自动翻页  
 * 目标爬取微信读书部分书籍名称

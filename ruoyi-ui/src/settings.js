@@ -1,5 +1,5 @@
 module.exports = {
-  title: '3A书店系统',
+  title: '三味书屋系统',
 
   /**
    * 侧边栏主题 深色主题theme-dark，浅色主题theme-light

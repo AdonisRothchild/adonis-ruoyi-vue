@@ -20,7 +20,7 @@ export default {
     return {
       // 版本号
       version: "3.3.0",
-      title: "3A书店系统"
+      title: "三味书屋系统"
     };
   },
   methods: {

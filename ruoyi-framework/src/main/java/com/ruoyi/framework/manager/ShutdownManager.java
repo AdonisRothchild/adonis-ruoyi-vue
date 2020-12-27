@@ -29,7 +29,7 @@ public class ShutdownManager
         try
         {
             logger.info("====关闭后台任务任务线程池====");
-            AsyncManager.me().shutdown();
+            AsyncManager.getInstance().shutdown();
         }
         catch (Exception e)
         {

@@ -28,11 +28,11 @@ public class AsyncManager
      */
     private AsyncManager(){}
 
-    private static AsyncManager me = new AsyncManager();
+    private static AsyncManager instance = new AsyncManager();
 
-    public static AsyncManager me()
+    public static AsyncManager getInstance()
     {
-        return me;
+        return instance;
     }
 
     /**

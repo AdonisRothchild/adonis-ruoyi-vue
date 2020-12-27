@@ -10,11 +10,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <description>biz层业务处理类</description>
+    <groupId>com.shamisen</groupId>
     <artifactId>shamisen-biz</artifactId>
+    <version>0.0.1</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>ruoyi-system</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -6,10 +6,12 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import javax.sql.DataSource;
+
+import com.baomidou.mybatisplus.autoconfigure.SpringBootVFS;
 import org.apache.ibatis.io.VFS;
+
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.boot.autoconfigure.SpringBootVFS;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -29,7 +31,7 @@ import com.ruoyi.common.utils.StringUtils;
  * 
  * @author ruoyi
  */
-@Configuration
+//@Configuration
 public class MyBatisConfig
 {
     @Autowired
@@ -113,7 +115,7 @@ public class MyBatisConfig
         return resources.toArray(new Resource[resources.size()]);
     }
 
-    @Bean
+    //@Bean
     public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception
     {
         String typeAliasesPackage = env.getProperty("mybatis.typeAliasesPackage");

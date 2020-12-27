@@ -60,7 +60,6 @@
             <groupId>com.ruoyi</groupId>
             <artifactId>ruoyi-framework</artifactId>
         </dependency>
-
         <!-- 定时任务-->
         <dependency>
             <groupId>com.ruoyi</groupId>
@@ -74,7 +73,7 @@
         </dependency>
         <!-- 三味书屋的api模块-->
         <dependency>
-            <groupId>com.ruoyi</groupId>
+            <groupId>com.shamisen</groupId>
             <artifactId>shamisen-api</artifactId>
         </dependency>
     </dependencies>
