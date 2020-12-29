@@ -3,8 +3,11 @@
     <el-row :gutter="10">
       <el-col :sm="24" :lg="24">
          <el-header height="100">
-    {{title}}
+     {{title}}
          </el-header>
+        <el-col>
+          <Icons></Icons>
+        </el-col>
       </el-col>
     </el-row>
     <el-divider />
@@ -14,8 +17,13 @@
 </template>
 
 <script>
+import Icons from '@/views/components/icons/index.vue'
 export default {
   name: "index",
+  components:
+    {
+      Icons,
+    },
   data() {
     return {
       // 版本号
@@ -24,9 +32,6 @@ export default {
     };
   },
   methods: {
-    goTarget(href) {
-      window.open(href, "_blank");
-    },
   },
 };
 </script>

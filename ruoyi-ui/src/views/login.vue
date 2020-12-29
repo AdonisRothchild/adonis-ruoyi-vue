@@ -88,6 +88,7 @@ export default {
     $route: {
       handler: function(route) {
         this.redirect = route.query && route.query.redirect;
+        debugger;
       },
       immediate: true
     }
