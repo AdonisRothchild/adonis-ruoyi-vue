@@ -4,7 +4,11 @@
 
 <script>
 export default {
-  name: "BookType"
+  name: "BookType",
+  data:
+    {
+      message:"111"
+    }
 }
 </script>
 

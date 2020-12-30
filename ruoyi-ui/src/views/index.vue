@@ -6,7 +6,6 @@
      {{title}}
          </el-header>
         <el-col>
-          <Icons></Icons>
         </el-col>
       </el-col>
     </el-row>
@@ -17,13 +16,10 @@
 </template>
 
 <script>
-import Icons from '@/views/components/icons/index.vue'
+import Icons from "./components/icons";
 export default {
   name: "index",
-  components:
-    {
-      Icons,
-    },
+  components: {Icons},
   data() {
     return {
       // 版本号
