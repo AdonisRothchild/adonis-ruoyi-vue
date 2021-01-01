@@ -25,6 +25,10 @@ target/
 *.iml
 *.ipr
 
+### JREBEL ####
+!*/resources/rebel.xml
+
+
 ### NetBeans ###
 nbproject/private/
 build/*
@@ -42,3 +46,4 @@ nbdist/
 !*/build/*.java
 !*/build/*.html
 !*/build/*.xml
+
