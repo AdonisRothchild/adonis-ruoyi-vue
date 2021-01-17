@@ -10,6 +10,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.ruoyi.common.annotation.DataFill;
 import lombok.Data;
 
+import static com.ruoyi.common.utils.DataFillUtil.NOW_DATE;
+
 /**
  *
  * @author  adonis
@@ -40,7 +42,7 @@ public class BookContent implements Serializable {
      *
      */
     @TableField(fill = FieldFill.INSERT)
-    @DataFill(value = "T(com.ruoyi.common.utils.DateUtils).getNowDate()",fillClass = Date.class)
+    @DataFill(value = NOW_DATE,fillClass = Date.class)
     private Date createTime;
 
     /**
@@ -48,7 +50,7 @@ public class BookContent implements Serializable {
      *
      */
     @TableField(fill = FieldFill.INSERT_UPDATE)
-    @DataFill(value = "T(com.ruoyi.common.utils.DateUtils).getNowDate()",fillClass = Date.class)
+    @DataFill(value = NOW_DATE,fillClass = Date.class)
     private Date updateTime;
 
     /**

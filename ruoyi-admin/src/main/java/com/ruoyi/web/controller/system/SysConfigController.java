@@ -1,5 +1,8 @@
 package com.ruoyi.web.controller.system;
 
+import java.sql.Connection;
+import java.sql.Driver;
+import java.sql.DriverManager;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -26,7 +29,7 @@ import com.ruoyi.system.service.ISysConfigService;
 
 /**
  * 参数配置 信息操作处理
- * 
+ *
  * @author ruoyi
  */
 @RestController
