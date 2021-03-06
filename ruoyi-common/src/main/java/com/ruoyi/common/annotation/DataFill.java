@@ -20,7 +20,6 @@ import java.lang.annotation.Target;
 public @interface DataFill{
 
      String value() ;
-
     /**
      * 填充的类型
      * @return
