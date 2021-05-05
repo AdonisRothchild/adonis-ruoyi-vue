@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.FastByteArrayOutputStream;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
@@ -24,7 +23,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author ruoyi
  */
-@RestController
+//@RestController
 public class CaptchaController
 {
     @Resource(name = "captchaProducer")
@@ -39,7 +38,6 @@ public class CaptchaController
     // 验证码类型
     @Value("${ruoyi.captchaType}")
     private String captchaType;
-
     /**
      * 生成验证码
      */
